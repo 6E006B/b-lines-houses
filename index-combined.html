@@ -28,12 +28,12 @@
     }).addTo(map);
 
     // Load your GeoJSON overlay from the same folder or a URL
-    fetch('berlin-u-lines.geojson')
+    fetch('berlin-lines.geojson')
       .then(response => response.json())
       .then(data => {
         L.geoJSON(data, {
           style: {
-            color: 'torquise',
+            color: 'red',
             weight: 2
           }
         }).addTo(map);
